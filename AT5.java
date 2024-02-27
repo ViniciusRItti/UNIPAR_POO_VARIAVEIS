@@ -2,7 +2,7 @@
     public static void main(String[] args) {
         
         String nomeSmartphone = "Redmi note 8";
-        String marcaSmartphone = "Xaomi";
+        String marcaSmartphone = "Xiaomi";
         double precoSmartphone = 1200.00;
         int qtdSmartphone = 50;
         
