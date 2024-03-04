@@ -1,18 +1,23 @@
 import java.util.Scanner;
+
 class HelloWorld {
     public static void main(String[] args) {
         
-        double valorCelsius = 0.0;
-        double valorFahrenheit =0.0;
-        
         Scanner scanner = new Scanner(System.in);
+       
+        int valor = 0;
+        double valorCotacao = 0.0;
+       
+        System.out.println("Informe o valor para converter");
+        valor = scanner.nextInt();
         
-        System.out.println("Informe a temperatura em celsius");
-        valorCelsius = scanner.nextDouble();
+        System.out.println("Qual a cotacao");
+        valorCotacao = scanner.nextDouble();
         
-        valorFahrenheit = (valorCelsius * 9/5)+32;
+        double valorConvertido = valor * valorCotacao;
         
-        System.out.println("Valor em Fahrenheit " + valorFahrenheit);
+        System.out.println("O valor convertido eh " + valorConvertido);
         
+        scanner.close();
     }
 }
